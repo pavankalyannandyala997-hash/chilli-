@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>శ్రీ కపోతేశ్వర కారం – మన తెలుగు ఇంటి కారం | Sri Kapoteswara Karam</title>
+    <meta name="description" content="100% స్వచ్ఛమైన గుంటూరు మిరపకాయల కారం పొడులు - శ్రీ కపోతేశ్వర కారం">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar">
+        <i class="fa-solid fa-pepper-hot"></i>
+        <span data-te="శ్రీ కపోతేశ్వర కారం – మన తెలుగు ఇంటి కారం | ₹500 పైన కొనుగోలుపై ఉచిత హోమ్ డెలివరీ"
+              data-en="Sri Kapoteswara Karam – Authentic Telugu Spices | Free Delivery on orders above ₹500">
+            శ్రీ కపోతేశ్వర కారం – మన తెలుగు ఇంటి కారం | ₹500 పైన కొనుగోలుపై ఉచిత హోమ్ డెలివరీ
+        </span>
+    </div>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo-brand">
+                <div class="logo-icon">
+                    <img src="images/shiva_logo.jpg" alt="శ్రీ కపోతేశ్వర స్వామి" class="shiva-logo-img">
+                </div>
+                <div class="brand-text">
+                    <h1 data-te="శ్రీ కపోతేశ్వర కారం" data-en="Sri Kapoteswara Karam">శ్రీ కపోతేశ్వర కారం</h1>
+                    <span data-te="మన తెలుగు ఇంటి కారం" data-en="Authentic Telugu House Spices">మన తెలుగు ఇంటి కారం</span>
+                </div>
+            </a>
+
+            <div class="header-actions">
+                <!-- Language Switcher Button -->
+                <button class="lang-switch-btn" onclick="toggleLanguage()" title="భాష మార్చు / Switch Language">
+                    <i class="fa-solid fa-globe"></i>
+                    <span id="langBtnText">English</span>
+                </button>
+
+                <button class="admin-link-btn" onclick="openAdminLoginModal()" title="అడ్మిన్ లాగిన్">
+                    <i class="fa-solid fa-user-gear"></i> Admin
+                </button>
+
+                <button class="cart-icon-btn" id="cartToggleBtn" aria-label="Shopping Cart">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    <span data-te="కార్ట్" data-en="Cart">కార్ట్</span>
+                    <span class="cart-badge" id="cartCountBadge">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Lord Shiva (Left) & Lord Venkateswara (Right) -->
+    <section class="hero">
+        <div class="hero-container">
+            <!-- Left Side: Lord Shiva -->
+            <div class="divine-god-card">
+                <img src="images/shiva_hero.jpg" alt="శ్రీ కపోతేశ్వర స్వామి" class="god-hero-img">
+                <span class="god-label" data-te="శ్రీ కపోతేశ్వర స్వామి" data-en="Lord Shiva">శ్రీ కపోతేశ్వర స్వామి</span>
+            </div>
+
+            <!-- Center Content -->
+            <div class="hero-content">
+                <span class="hero-tag" data-te="🌶️ 100% స్వచ్ఛమైన గృహ తయారీ" data-en="🌶️ 100% Pure Homemade Spices">
+                    🌶️ 100% స్వచ్ఛమైన గృహ తయారీ
+                </span>
+                <h2 class="hero-title" data-te="శ్రీ కపోతేశ్వర కారం" data-en="Sri Kapoteswara Karam">
+                    శ్రీ కపోతేశ్వర కారం
+                </h2>
+                <div class="hero-tagline" data-te="మన తెలుగు ఇంటి కారం" data-en="Authentic Telugu House Spices">
+                    మన తెలుగు ఇంటి కారం
+                </div>
+                <p class="hero-subtitle" data-te="ఎటువంటి రసాయనాలు లేకుండా, సాంప్రదాయ పద్ధతిలో తయారైన తాజా కారం పొడులు నేరుగా మీ ఇంటికి!"
+                   data-en="Fresh traditional homemade red chilli powders delivered straight to your home without chemicals!">
+                    ఎటువంటి రసాయనాలు లేకుండా, సాంప్రదాయ పద్ధతిలో తయారైన తాజా కారం పొడులు నేరుగా మీ ఇంటికి!
+                </p>
+            </div>
+
+            <!-- Right Side: Lord Venkateswara -->
+            <div class="divine-god-card">
+                <img src="images/venkateswara_hero.jpg" alt="శ్రీ వేంకటేశ్వర స్వామి" class="god-hero-img">
+                <span class="god-label" data-te="శ్రీ వేంకటేశ్వర స్వామి" data-en="Lord Venkateswara">శ్రీ వేంకటేశ్వర స్వామి</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Store WhatsApp Number Notice Banner -->
+    <div class="whatsapp-store-banner">
+        <div class="ws-banner-info">
+            <i class="fa-brands fa-whatsapp"></i>
+            <div>
+                <strong data-te="స్టోర్ అధికారిక WhatsApp నంబర్:" data-en="Official Store WhatsApp Number:">
+                    స్టోర్ అధికారిక WhatsApp నంబర్:
+                </strong>
+                <p style="font-size: 0.82rem; margin: 0; opacity: 0.9;" 
+                   data-te="మీ ఆర్డర్‌లు నేరుగా ఈ నంబర్‌కు చేరతాయి." 
+                   data-en="Your orders will be sent directly to this number.">
+                    మీ ఆర్డర్‌లు నేరుగా ఈ నంబర్‌కు చేరతాయి.
+                </p>
+            </div>
+        </div>
+        <div class="ws-banner-number">
+            +91 9000077543
+        </div>
+    </div>
+
+    <!-- Product Catalog Section -->
+    <main class="catalog-section">
+        <div class="catalog-title-bar">
+            <h2 data-te="మా కారం (Products)" data-en="Our Spices (Products)">మా కారం (Products)</h2>
+            <p data-te="250 గ్రాముల నుండి 50 కిలోల వరకు మీకు కావలసిన బరువును ఎంచుకోండి."
+               data-en="Choose your required weight from 250 grams up to 50 KG.">
+                250 గ్రాముల నుండి 50 కిలోల వరకు మీకు కావలసిన బరువును ఎంచుకోండి.
+            </p>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid" id="productsGrid">
+            <!-- Dynamically rendered via script.js -->
+        </div>
+    </main>
+
+    <!-- Cart Overlay -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <!-- Cart Slide-over Drawer -->
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping Cart Drawer">
+        <div class="cart-header">
+            <h3><i class="fa-solid fa-cart-shopping"></i> <span data-te="మీ ఆర్డర్ కార్ట్" data-en="Your Order Cart">మీ ఆర్డర్ కార్ట్</span></h3>
+            <button class="close-cart-btn" id="closeCartBtn" aria-label="Close Cart">&times;</button>
+        </div>
+
+        <div class="cart-body">
+            <!-- Free Delivery Indicator -->
+            <div class="free-delivery-badge info" id="freeDeliveryNotice">
+                🚚 ₹500 పైన ఆర్డర్‌లపై ఉచిత డెలివరీ
+            </div>
+
+            <!-- Cart Items List -->
+            <div class="cart-items-container" id="cartItemsContainer">
+                <!-- Cart items dynamically rendered here -->
+            </div>
+
+            <!-- Customer Details Checkout Form -->
+            <div class="checkout-form-section">
+                <h4><i class="fa-solid fa-user-pen"></i> <span data-te="కస్టమర్ వివరాలు" data-en="Customer Details">కస్టమర్ వివరాలు</span></h4>
+                
+                <div class="form-group">
+                    <label for="custName" data-te="కస్టమర్ పేరు (Customer Name) *" data-en="Customer Name *">కస్టమర్ పేరు (Customer Name) *</label>
+                    <input type="text" id="custName" class="form-control" data-te-placeholder="ఉదా: వెంకటేశ్వర్లు" data-en-placeholder="e.g. Venkateswarlu" placeholder="ఉదా: వెంకటేశ్వర్లు" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="custMobile" data-te="మొబైల్ నంబర్ (Mobile Number) *" data-en="Mobile Number *">మొబైల్ నంబర్ (Mobile Number) *</label>
+                    <input type="tel" id="custMobile" class="form-control" data-te-placeholder="ఉదా: 9876543210" data-en-placeholder="e.g. 9876543210" placeholder="ఉదా: 9876543210" required maxLength="10">
+                </div>
+
+                <div class="form-group">
+                    <label data-te="ఆర్డర్ విధానం (Order Method) *" data-en="Order Method *">ఆర్డర్ విధానం (Order Method) *</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="orderMethod" id="methodDelivery" value="delivery" checked>
+                            <span data-te="హోమ్ డెలివరీ (Home Delivery)" data-en="Home Delivery">హోమ్ డెలివరీ (Home Delivery)</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="orderMethod" id="methodPickup" value="pickup">
+                            <span data-te="స్టోర్ పిక్ అప్ (Store Pickup)" data-en="Store Pickup">స్టోర్ పిక్ అప్ (Store Pickup)</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group" id="addressGroup">
+                    <label for="custAddress" data-te="డెలివరీ చిరునామా (Delivery Address) *" data-en="Delivery Address *">డెలివరీ చిరునామా (Delivery Address) *</label>
+                    <textarea id="custAddress" class="form-control" rows="2" data-te-placeholder="ఇంటి నంబర్, వీధి, గ్రామం/పట్టణం, పిన్ కోడ్" data-en-placeholder="Door No, Street, City/Town, Pincode" placeholder="ఇంటి నంబర్, వీధి, గ్రామం/పట్టణం, పిన్ కోడ్"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="custNotes" data-te="ఆర్డర్ గమనికలు (Order Notes - ఐచ్ఛికం)" data-en="Order Notes (Optional)">ఆర్డర్ గమనికలు (Order Notes - ఐచ్ఛికం)</label>
+                    <input type="text" id="custNotes" class="form-control" data-te-placeholder="సూచనలు..." data-en-placeholder="Special instructions..." placeholder="సూచనలు...">
+                </div>
+            </div>
+        </div>
+
+        <!-- Cart Summary & WhatsApp Order Button -->
+        <div class="cart-footer">
+            <div class="summary-row">
+                <span data-te="ఉప మొత్తం (Subtotal):" data-en="Subtotal:">ఉప మొత్తం (Subtotal):</span>
+                <span>₹<span id="cartSubtotal">0</span></span>
+            </div>
+            <div class="summary-row">
+                <span data-te="డెలివరీ ఛార్జ్ (Delivery Fee):" data-en="Delivery Fee:">డెలివరీ ఛార్జ్ (Delivery Fee):</span>
+                <span>₹<span id="cartDeliveryCharge">0</span></span>
+            </div>
+            <div class="summary-row grand-total">
+                <span data-te="మొత్తం (Grand Total):" data-en="Grand Total:">మొత్తం (Grand Total):</span>
+                <span>₹<span id="cartGrandTotal">0</span></span>
+            </div>
+
+            <button class="whatsapp-checkout-btn" id="checkoutSubmitBtn">
+                <i class="fa-brands fa-whatsapp"></i> <span data-te="WhatsApp ద్వారా ఆర్డర్ చేయండి" data-en="Order via WhatsApp">WhatsApp ద్వారా ఆర్డర్ చేయండి</span>
+            </button>
+        </div>
+    </aside>
+
+    <!-- CUSTOMER THANK YOU ORDER STATUS MODAL -->
+    <div class="modal-overlay" id="thankYouOrderModal">
+        <div class="modal-card">
+            <div class="modal-icon-success">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            
+            <h3 class="modal-title text-center" data-te="ధన్యవాదాలు! మీ ఆర్డర్ నమోదైంది 🎉" data-en="Thank You! Your Order is Placed 🎉">
+                ధన్యవాదాలు! మీ ఆర్డర్ నమోదైంది 🎉
+            </h3>
+            
+            <div class="thankyou-banner-text">
+                <p data-te="శ్రీ కపోతేశ్వర కారంని ఎంచుకున్నందుకు మీకు హృదయపూర్వక ధన్యవాదాలు! 🙏"
+                   data-en="Heartfelt thanks for choosing Sri Kapoteswara Karam! 🙏">
+                    శ్రీ కపోతేశ్వర కారంని ఎంచుకున్నందుకు మీకు హృదయపూర్వక ధన్యవాదాలు! 🙏
+                </p>
+                <div class="whatsapp-prompt-badge">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span data-te="మీ ఆర్డర్ వివరాలు WhatsApp లో సిద్ధంగా ఉన్నాయి. ఆర్డర్ పంపించడానికి Send నొక్కండి."
+                          data-en="Your order details are ready in WhatsApp. Press Send to submit your order.">
+                        మీ ఆర్డర్ వివరాలు WhatsApp లో సిద్ధంగా ఉన్నాయి. ఆర్డర్ పంపించడానికి Send నొక్కండి.
+                    </span>
+                </div>
+            </div>
+
+            <!-- Order Summary Card -->
+            <div class="thankyou-summary-card">
+                <div class="summary-card-row">
+                    <span data-te="ఆర్డర్ నంబర్ (Order ID):" data-en="Order ID:">ఆర్డర్ నంబర్ (Order ID):</span>
+                    <strong id="thankOrderId">#SKK-1001</strong>
+                </div>
+                <div class="summary-card-row">
+                    <span data-te="కస్టమర్ పేరు (Name):" data-en="Customer Name:">కస్టమర్ పేరు (Name):</span>
+                    <strong id="thankCustName">-</strong>
+                </div>
+                <div class="summary-card-row">
+                    <span data-te="మొబైల్ (Mobile):" data-en="Mobile:">మొబైల్ (Mobile):</span>
+                    <span id="thankCustMobile">-</span>
+                </div>
+                <div class="summary-card-row highlight-total">
+                    <span data-te="ఆర్డర్ మొత్తం (Total):" data-en="Order Total:">ఆర్డర్ మొత్తం (Total):</span>
+                    <strong id="thankGrandTotal">₹0</strong>
+                </div>
+                <div class="summary-card-row">
+                    <span data-te="స్టోర్ WhatsApp:" data-en="Store WhatsApp:">స్టోర్ WhatsApp:</span>
+                    <strong>+91 9000077543</strong>
+                </div>
+            </div>
+
+            <div class="thankyou-modal-actions">
+                <button class="whatsapp-checkout-btn" id="reopenWhatsAppBtn">
+                    <i class="fa-brands fa-whatsapp"></i> <span data-te="WhatsApp తెరవండి (Open WhatsApp)" data-en="Open WhatsApp">WhatsApp తెరవండి (Open WhatsApp)</span>
+                </button>
+                <button class="btn btn-secondary" onclick="closeThankYouOrderModal()" style="width: 100%; margin-top: 10px;" data-te="మరిన్ని కొనుగోలు చేయండి (Shop More)" data-en="Shop More">
+                    <i class="fa-solid fa-store"></i> మరిన్ని కొనుగోలు చేయండి (Shop More)
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ADMIN LOGIN MODAL -->
+    <div class="modal-overlay" id="adminLoginModal">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-lock"></i> <span data-te="అడ్మిన్ లాగిన్ (Admin Login)" data-en="Admin Login">అడ్మిన్ లాగిన్ (Admin Login)</span></h3>
+                <button class="btn-sm btn-secondary" onclick="closeAdminLoginModal()">&times;</button>
+            </div>
+            
+            <form id="adminLoginForm">
+                <div class="form-group">
+                    <label for="adminPasswordInput" data-te="అడ్మిన్ పాస్‌వర్డ్ (Admin Password):" data-en="Admin Password:">అడ్మిన్ పాస్‌వర్డ్ (Admin Password):</label>
+                    <input type="password" id="adminPasswordInput" class="form-control" placeholder="పాస్‌వర్డ్ ఎంటర్ చేయండి" required>
+                    <small style="color: #888; font-size: 0.75rem; margin-top: 4px; display: block;">
+                        Admin Password: <code>pavan123</code>
+                    </small>
+                </div>
+                
+                <div class="modal-actions">
+                    <button type="button" class="btn btn-secondary" onclick="closeAdminLoginModal()" data-te="రద్దు" data-en="Cancel">రద్దు</button>
+                    <button type="submit" class="btn btn-primary" data-te="లాగిన్" data-en="Login">లాగిన్</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- ADMIN DASHBOARD MODAL -->
+    <div class="modal-overlay" id="adminDashboardModal">
+        <div class="modal-card modal-lg">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-sliders"></i> <span data-te="అడ్మిన్ ప్యానెల్ - ధరల నిర్వహణ" data-en="Admin Panel - Price Management">అడ్మిన్ ప్యానెల్ - ధరల నిర్వహణ</span></h3>
+                <button class="btn-sm btn-secondary" onclick="closeAdminDashboardModal()">&times;</button>
+            </div>
+
+            <div class="admin-disclaimer" data-te="గమనిక (Admin Note): ఇది బ్రౌజర్ ఆధారిత (Frontend-only) అడ్మిన్ సిస్టమ్. ధరలు మీ బ్రౌజర్‌లోని localStorage నందు భద్రపరచబడతాయి."
+                 data-en="Note: This is a frontend-only admin system stored in browser localStorage.">
+                <i class="fa-solid fa-circle-info"></i>
+                గమనిక (Admin Note): ఇది బ్రౌజర్ ఆధారిత (Frontend-only) అడ్మిన్ సిస్టమ్. ధరలు మీ బ్రౌజర్‌లోని <code>localStorage</code> నందు భద్రపరచబడతాయి.
+            </div>
+
+            <div class="admin-toolbar">
+                <button class="btn btn-danger btn-sm" onclick="resetToDefaultProducts()" data-te="డిఫాల్ట్ ధరలకు మార్చండి" data-en="Reset to Defaults">
+                    <i class="fa-solid fa-rotate-left"></i> డిఫాల్ట్ ధరలకు మార్చండి
+                </button>
+                <button class="btn btn-secondary btn-sm" onclick="adminLogout()" data-te="లాగౌట్" data-en="Logout">
+                    <i class="fa-solid fa-right-from-bracket"></i> లాగౌట్
+                </button>
+            </div>
+
+            <div class="admin-table-wrapper">
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th data-te="ఉత్పత్తి" data-en="Product">ఉత్పత్తి</th>
+                            <th data-te="ధర (Price / 1 KG)" data-en="Price / 1 KG">ధర (Price / 1 KG)</th>
+                            <th data-te="బరువు" data-en="Weight Label">బరువు</th>
+                            <th data-te="అందుబాటులో ఉందా?" data-en="Available?">అందుబాటులో ఉందా?</th>
+                            <th data-te="చర్య (Action)" data-en="Action">చర్య (Action)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="adminProductTableBody">
+                        <!-- Dynamic render -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- ADMIN EDIT PRODUCT MODAL -->
+    <div class="modal-overlay" id="adminEditModal">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-pen-to-square"></i> <span data-te="ఉత్పత్తి వివరాలు ఎడిట్ చేయండి" data-en="Edit Product Details">ఉత్పత్తి వివరాలు ఎడిట్ చేయండి</span></h3>
+                <button class="btn-sm btn-secondary" onclick="closeEditProductModal()">&times;</button>
+            </div>
+
+            <form id="editProductForm">
+                <div class="form-group">
+                    <label for="editProdName" data-te="ఉత్పత్తి పేరు (Product Name):" data-en="Product Name:">ఉత్పత్తి పేరు (Product Name):</label>
+                    <input type="text" id="editProdName" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="editProdPrice" data-te="ధర (Base Price for 1 KG ₹):" data-en="Base Price for 1 KG (₹):">ధర (Base Price for 1 KG ₹):</label>
+                    <input type="number" id="editProdPrice" class="form-control" min="0" step="1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="editProdWeight" data-te="బరువు (Weight Label):" data-en="Weight Label:">బరువు (Weight Label):</label>
+                    <input type="text" id="editProdWeight" class="form-control" value="1 కిలో వరకు" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="editProdImage" data-te="ఉత్పత్తి చిత్రం URL (Image Path):" data-en="Image Path URL:">ఉత్పత్తి చిత్రం URL (Image Path):</label>
+                    <input type="text" id="editProdImage" class="form-control" placeholder="images/guntur_karam.jpg">
+                </div>
+
+                <div class="form-group">
+                    <label class="radio-label">
+                        <input type="checkbox" id="editProdAvailable">
+                        <span data-te="అందుబాటులో ఉందా? (Available for ordering)" data-en="Available for ordering">అందుబాటులో ఉందా? (Available for ordering)</span>
+                    </label>
+                </div>
+
+                <div class="modal-actions">
+                    <button type="button" class="btn btn-secondary" onclick="closeEditProductModal()" data-te="రద్దు (Cancel)" data-en="Cancel">రద్దు (Cancel)</button>
+                    <button type="submit" class="btn btn-primary" data-te="సేవ్ చేయండి (Save)" data-en="Save">సేవ్ చేయండి (Save)</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Toast Notification Element -->
+    <div class="toast" id="toastNotification"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3 data-te="శ్రీ కపోతేశ్వర కారం" data-en="Sri Kapoteswara Karam">శ్రీ కపోతేశ్వర కారం</h3>
+                <p data-te="మన తెలుగు ఇంటి సాంప్రదాయ శైలిలో 100% శుభ్రత మరియు స్వచ్ఛతతో తయారు చేయబడిన కారం పొడులు."
+                   data-en="Traditional 100% pure homemade Telugu red chilli powders and spices.">
+                    మన తెలుగు ఇంటి సాంప్రదాయ శైలిలో 100% శుభ్రత మరియు స్వచ్ఛతతో తయారు చేయబడిన కారం పొడులు.
+                </p>
+            </div>
+            <div class="footer-col footer-contact">
+                <h3 data-te="సంప్రదించండి" data-en="Contact Us">సంప్రదించండి</h3>
+                <p><i class="fa-solid fa-phone"></i> +91 9000077543</p>
+                <p><i class="fa-brands fa-whatsapp"></i> +91 9000077543</p>
+                <p><i class="fa-solid fa-location-dot"></i> <span data-te="గుంటూరు, ఆంధ్రప్రదేశ్" data-en="Guntur, Andhra Pradesh">గుంటూరు, ఆంధ్రప్రదేశ్</span></p>
+            </div>
+            <div class="footer-col">
+                <h3 data-te="అడ్మిన్ యాక్సెస్" data-en="Admin Access">అడ్మిన్ యాక్సెస్</h3>
+                <button class="btn btn-sm btn-secondary" onclick="openAdminLoginModal()">
+                    <i class="fa-solid fa-lock"></i> Admin Panel
+                </button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 శ్రీ కపోతేశ్వర కారం. All rights reserved.</p>
+            <p data-te="మన తెలుగు ఇంటి కారం" data-en="Authentic Telugu House Spices">మన తెలుగు ఇంటి కారం</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
