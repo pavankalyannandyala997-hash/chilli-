@@ -1130,7 +1130,167 @@ body {
     gap: 12px;
 }
 
+/* Responsive Breakpoints & Mobile Optimization */
+@media (max-width: 992px) {
+    .divine-god-card {
+        width: 130px;
+        height: 155px;
+    }
+}
+
 @media (max-width: 768px) {
-    .hero-title { font-size: 1.7rem; }
-    .brand-text h1 { font-size: 1.1rem; }
+    html, body {
+        width: 100vw;
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .announcement-bar {
+        font-size: 0.78rem;
+        padding: 6px 10px;
+    }
+
+    .header-container {
+        padding: 8px 12px;
+        gap: 6px;
+    }
+
+    .logo-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .brand-text h1 {
+        font-size: 1.05rem;
+    }
+
+    .brand-text span {
+        font-size: 0.72rem;
+    }
+
+    .header-actions {
+        gap: 6px;
+    }
+
+    .lang-switch-btn, .admin-link-btn {
+        padding: 5px 10px;
+        font-size: 0.75rem;
+    }
+
+    .cart-icon-btn {
+        padding: 6px 12px;
+        font-size: 0.82rem;
+    }
+
+    .hero {
+        padding: 24px 10px;
+    }
+
+    .hero-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 6px;
+    }
+
+    .divine-god-card {
+        width: 85px;
+        height: 105px;
+        border-width: 1.5px;
+        border-radius: 12px;
+    }
+
+    .god-label {
+        font-size: 0.6rem;
+        padding: 4px 1px;
+    }
+
+    .hero-content {
+        padding: 0 4px;
+    }
+
+    .hero-title {
+        font-size: 1.35rem;
+        margin-bottom: 4px;
+    }
+
+    .hero-tagline {
+        font-size: 0.92rem;
+        margin-bottom: 8px;
+    }
+
+    .hero-subtitle {
+        font-size: 0.78rem;
+        line-height: 1.3;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .hero-tag {
+        font-size: 0.7rem;
+        padding: 3px 8px;
+        margin-bottom: 6px;
+    }
+
+    .whatsapp-store-banner {
+        margin: 16px 12px 0 12px;
+        padding: 12px;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .ws-banner-info {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .catalog-section {
+        padding: 0 12px;
+        margin: 20px auto;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .product-card {
+        border-radius: 14px;
+    }
+
+    .cart-drawer {
+        width: 100vw;
+        max-width: 100vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .divine-god-card {
+        width: 72px;
+        height: 92px;
+    }
+
+    .god-label {
+        font-size: 0.55rem;
+        padding: 2px 1px;
+    }
+
+    .hero-title {
+        font-size: 1.15rem;
+    }
+
+    .hero-tagline {
+        font-size: 0.85rem;
+    }
+
+    .brand-text h1 {
+        font-size: 0.95rem;
+    }
+
+    .brand-text span {
+        display: none;
+    }
 }
