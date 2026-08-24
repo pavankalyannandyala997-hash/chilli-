@@ -395,6 +395,26 @@ function updateCartUI() {
     if (deliveryEl) deliveryEl.textContent = deliveryCharge;
     if (grandTotalEl) grandTotalEl.textContent = grandTotal;
 
+    // Sticky Floating Bottom Cart Bar Updates (Flipkart/Blinkit/Swiggy style)
+    const stickyBar = document.getElementById("stickyBottomCartBar");
+    const stickyCount = document.getElementById("stickyCartCount");
+    const stickyPrice = document.getElementById("stickyCartPrice");
+    const stickySub = document.getElementById("stickyCartSub");
+
+    if (stickyCount) stickyCount.textContent = totalCount;
+    if (stickyPrice) stickyPrice.textContent = grandTotal;
+
+    if (stickyBar) {
+        if (cart.length > 0) {
+            stickyBar.classList.add("active");
+            if (stickySub) {
+                stickySub.textContent = isTe ? `${totalCount} ఐటమ్‌లు | ఆర్డర్ పూర్తి చేయడానికి క్లిక్ చేయండి` : `${totalCount} item(s) | Click to complete order`;
+            }
+        } else {
+            stickyBar.classList.remove("active");
+        }
+    }
+
     if (freeDeliveryNotice) {
         if (deliveryMethod === 'pickup') {
             freeDeliveryNotice.textContent = isTe ? "🏪 షాపు నందు స్వీకరణ (Store Pickup) - డెలివరీ ఛార్జ్ ఉచితం" : "🏪 Store Pickup - Free Delivery";

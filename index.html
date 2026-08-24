@@ -413,6 +413,27 @@
         </div>
     </footer>
 
+    <!-- Floating Sticky Bottom Cart Bar for Mobile & Quick Checkout (Flipkart/Blinkit/Swiggy style) -->
+    <div class="sticky-bottom-cart-bar" id="stickyBottomCartBar">
+        <div class="sticky-cart-info" onclick="openCartDrawer()">
+            <div class="sticky-cart-icon-wrapper">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="sticky-cart-badge-count" id="stickyCartCount">0</span>
+            </div>
+            <div class="sticky-cart-details">
+                <div class="sticky-cart-total-price">₹<span id="stickyCartPrice">0</span></div>
+                <div class="sticky-cart-sub-text" id="stickyCartSub" data-te="ఆర్డర్ పూర్తి చేయడానికి క్లిక్ చేయండి" data-en="Click to complete order">
+                    ఆర్డర్ పూర్తి చేయడానికి క్లిక్ చేయండి
+                </div>
+            </div>
+        </div>
+
+        <button class="sticky-checkout-btn" onclick="openCartDrawer()">
+            <span data-te="ఆర్డర్ కొనసాగించండి" data-en="Continue Order">ఆర్డర్ కొనసాగించండి</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+    </div>
+
     <!-- JavaScript File -->
     <script src="script.js"></script>
 </body>
